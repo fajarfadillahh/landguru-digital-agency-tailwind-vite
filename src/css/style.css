@@ -71,3 +71,8 @@
   background-image: url(../img/home-pattern-2.svg);
   background-position: right bottom;
 }
+
+/* ===== PRICING SECTION ===== */
+.pricing__card:nth-child(3)::before {
+  @apply absolute content-["Suggested"] -top-4 left-8 text-[15px] text-white font-medium py-1 px-3 bg-[#ffa740] rounded-[7px];
+}

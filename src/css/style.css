@@ -1,0 +1,73 @@
+/* ===== FONT GOOGLE ===== */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+/* ===== TAILWIND DIRECTIVES TO CSS ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== REUSABLE CLASSES CSS */
+@layer components {
+  .section {
+    @apply py-16;
+  }
+
+  .section-title {
+    @apply text-center text-2xl text-black font-bold;
+  }
+
+  .section-subtitle {
+    @apply text-center block text-[14px] text-red font-bold uppercase mb-[10px];
+  }
+
+  .button {
+    @apply flex justify-center py-4 px-8 text-[15px] font-bold rounded-[5rem] transition-all duration-500;
+  }
+
+  .button:hover {
+    @apply shadow-[0_8px_8px_rgba(234,58,96,0.35)];
+  }
+}
+
+/* ===== HEADER SECTION ===== */
+@media screen and (max-width: 768px) {
+  .header__menu {
+    @apply fixed w-[80%] h-full top-0 -right-full bg-white py-8 grid grid-rows-[repeat(2,_max-content)] gap-8 shadow-[-1px_0_8px_rgba(52,61,72,0.25)] transition-all duration-500;
+  }
+}
+
+.header__link {
+  @apply flex items-center pl-8 min-h-[48px] bg-transparent text-[15px] text-black;
+}
+
+.header__menu.show-menu {
+  right: 0;
+}
+
+.header__link.active-link {
+  @apply relative font-medium text-red bg-[#ededed];
+}
+
+.header__link.active-link {
+  @apply before:absolute before:content-[""] before:w-[2px] before:h-full before:top-0 before:left-0 before:bg-red;
+}
+
+.header.sticky-header {
+  @apply shadow-[0_1px_8px_rgba(52,61,72,0.25)];
+}
+
+/* ===== HOME SECTION ===== */
+.home::before,
+.home::after {
+  @apply absolute content-[""] left-0 bottom-[100px] w-full h-full z-[-10];
+  background-image: url(../img/home-pattern-1.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 36%;
+}
+
+.home::after {
+  @apply right-0;
+  background-image: url(../img/home-pattern-2.svg);
+  background-position: right bottom;
+}

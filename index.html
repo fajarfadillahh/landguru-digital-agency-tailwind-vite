@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      LandGuru - Responsive Agency Website Using Html, Css, dan Javascript
+    </title>
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./src/img/logo.png" />
+
+    <!-- ===== BOXICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-body font-reguler tracking-[-0.99px]">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full h-24 top-0 left-0 bg-white z-50 transition-all duration-500"
+      id="header"
+    >
+      <div
+        class="header__container container px-5 h-full flex justify-between items-center"
+      >
+        <a href="#" class="header__logo inline-flex items-center gap-3">
+          <img src="./src/img/logo.png" alt="" class="header__logo-icon w-6" />
+          <span class="header__logo-text text-lg text-black font-bold"
+            >LandGuru</span
+          >
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <div class="header__data flex justify-between items-center mr-4 ml-8">
+            <a href="#" class="header__logo inline-flex items-center gap-3">
+              <img
+                src="./src/img/logo.png"
+                alt=""
+                class="header__logo-icon w-6"
+              />
+              <span class="header__logo-text text-lg text-black font-bold"
+                >LandGuru</span
+              >
+            </a>
+
+            <div
+              class="header__close inline-flex text-[1.5rem] text-black cursor-pointer"
+              id="header-close"
+            >
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="header__list flex flex-col">
+            <li class="header__item">
+              <a href="#" class="header__link active-link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Features</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Pricing</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Contact</a>
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            class="header__button button box-border self-end text-red border-[1.5px] border-red mx-8 hover:bg-red hover:text-white"
+            >Get Started</a
+          >
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
+
+    <main class="main overflow-hidden">
+      <!-- ===== HOME SECTION ===== -->
+      <section class="home relative pt-32 pb-16">
+        <div class="home__container container px-5 grid gap-12">
+          <div class="home__data text-center">
+            <h1
+              class="home__title text-[34px] text-black font-bold leading-title mb-4"
+            >
+              Top Quality Digital <br />
+              Products To Explore
+            </h1>
+            <p class="home__text text-[15px] text-black mb-8 leading-text">
+              Get your blood tests delivered at let home collect sample from the
+              victory of the managments that supplies best design system
+              guidelines ever.
+            </p>
+            <a
+              href="#"
+              class="home__button button inline-flex bg-red text-white text-[15px]"
+              >Explore</a
+            >
+          </div>
+
+          <img src="./src/img/home-image.png" alt="" class="home__img" />
+        </div>
+      </section>
+      <!-- ===== HOME SECTION ===== -->
+
+      <!-- ===== FEATURES SECTION ===== -->
+      <section class="features section">
+        <div class="features__container container px-5 grid gap-12">
+          <div class="features__data">
+            <span class="features__subtitle section-subtitle"
+              >What the function</span
+            >
+            <h1 class="features__title section-title">
+              Meet the feature of product
+            </h1>
+          </div>
+
+          <div
+            class="features__group grid justify-center w-[250px] gap-8 mx-auto"
+          >
+            <div class="features__item grid gap-6">
+              <img
+                src="./src/img/features-icon-(1).svg"
+                alt=""
+                class="features__item-icon w-[50px] justify-self-center drop-shadow-[0_8px_4px_rgba(234,58,96,0.3)]"
+              />
+              <div class="features__item-data text-center">
+                <h3
+                  class="features__item-title text-[18px] text-black font-bold mb-[10px]"
+                >
+                  Fast Performerce
+                </h3>
+                <p
+                  class="features__item-text text-[15px] text-grey leading-text"
+                >
+                  Get your blood tests delivered at home collect a sample from
+                  the your blood tests.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__item grid gap-6">
+              <img
+                src="./src/img/features-icon-(2).svg"
+                alt=""
+                class="features__item-icon w-[50px] justify-self-center drop-shadow-[0_8px_4px_rgba(234,58,96,0.3)]"
+              />
+              <div class="features__item-data text-center">
+                <h3
+                  class="features__item-title text-[18px] text-black font-bold mb-[10px]"
+                >
+                  Partnership Deal
+                </h3>
+                <p
+                  class="features__item-text text-[15px] text-grey leading-text"
+                >
+                  Get your blood tests delivered at home collect a sample from
+                  the your blood tests.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__item grid gap-6">
+              <img
+                src="./src/img/features-icon-(3).svg"
+                alt=""
+                class="features__item-icon w-[50px] justify-self-center drop-shadow-[0_8px_4px_rgba(234,58,96,0.3)]"
+              />
+              <div class="features__item-data text-center">
+                <h3
+                  class="features__item-title text-[18px] text-black font-bold mb-[10px]"
+                >
+                  Pro Subscription
+                </h3>
+                <p
+                  class="features__item-text text-[15px] text-grey leading-text"
+                >
+                  Get your blood tests delivered at home collect a sample from
+                  the your blood tests.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__item grid gap-6">
+              <img
+                src="./src/img/features-icon-(4).svg"
+                alt=""
+                class="features__item-icon w-[50px] justify-self-center drop-shadow-[0_8px_4px_rgba(234,58,96,0.3)]"
+              />
+              <div class="features__item-data text-center">
+                <h3
+                  class="features__item-title text-[18px] text-black font-bold mb-[10px]"
+                >
+                  Customer Support
+                </h3>
+                <p
+                  class="features__item-text text-[15px] text-grey leading-text"
+                >
+                  Get your blood tests delivered at home collect a sample from
+                  the your blood tests.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== FEATURES SECTION ===== -->
+
+      <!-- ===== SERVICES SECTION ===== -->
+      <section class="services section">
+        <div class="services__container container px-5 grid gap-12">
+          <div class="services__content grid gap-12">
+            <div class="services__data">
+              <span class="services__subtitle section-subtitle"
+                >Our services</span
+              >
+              <h1 class="services__title section-title">
+                Business goals achieved with design
+              </h1>
+            </div>
+
+            <div class="services__group grid gap-8">
+              <div class="services__item flex gap-4">
+                <img
+                  src="./src/img/features-icon-(2).svg"
+                  alt=""
+                  class="services__item-icon w-[50px] self-start drop-shadow-[0_8px_4px_rgba(234,58,96,0.3)]"
+                />
+                <div class="services__item-data">
+                  <h3
+                    class="services__item-title text-[18px] text-black font-bold mb-[10px]"
+                  >
+                    Smart Features
+                  </h3>
+                  <p
+                    class="services__item-text text-[15px] text-grey leading-text"
+                  >
+                    Get your blood tests delivered at let home collect sample
+                    from the victory of the managements. your blood tests.
+                  </p>
+                </div>
+              </div>
+
+              <div class="services__item flex gap-4">
+                <img
+                  src="./src/img/features-icon-(3).svg"
+                  alt=""
+                  class="services__item-icon w-[50px] self-start drop-shadow-[0_8px_4px_rgba(234,58,96,0.3)]"
+                />
+                <div class="services__item-data">
+                  <h3
+                    class="services__item-title text-[18px] text-black font-bold mb-[10px]"
+                  >
+                    Secure Contents
+                  </h3>
+                  <p
+                    class="services__item-text text-[15px] text-grey leading-text"
+                  >
+                    Get your blood tests delivered at let home collect sample
+                    from the victory of the managements. your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__overlay">
+            <div class="services__overlay-play">
+              <i class="bx bx-play"></i>
+            </div>
+            <img
+              src="./src/img/services-img.png"
+              alt=""
+              class="services__overlay-img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- ===== SERVICES SECTION ===== -->
+    </main>
+
+    <!-- ===== MAIN JS ===== -->
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

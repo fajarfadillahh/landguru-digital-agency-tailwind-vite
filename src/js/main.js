@@ -27,3 +27,20 @@ function stickyScroll() {
     : header.classList.remove("sticky-header");
 }
 window.addEventListener("scroll", stickyScroll);
+
+// ===== TESTIMONIAL SWIPER =====
+let swiper = new Swiper(".testimonial-container", {
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 18,
+  grabCursor: true,
+  autoplay: {
+    duration: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

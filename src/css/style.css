@@ -76,3 +76,17 @@
 .pricing__card:nth-child(3)::before {
   @apply absolute content-["Suggested"] -top-4 left-8 text-[15px] text-white font-medium py-1 px-3 bg-[#ffa740] rounded-[7px];
 }
+
+/* ===== PAGINATION TESTIMONIAL SECTION ===== */
+.swiper-pagination {
+  @apply mt-8;
+  position: initial;
+}
+
+.swiper-pagination-bullet {
+  @apply w-[8px] h-[8px] bg-[#ededed] opacity-100 mx-1;
+}
+
+.swiper-pagination-bullet-active {
+  @apply w-[1.5rem] h-[8px] rounded-[.5rem] bg-red;
+}

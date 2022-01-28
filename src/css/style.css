@@ -13,15 +13,15 @@
   }
 
   .section-title {
-    @apply text-center text-2xl text-black font-bold;
+    @apply text-center text-2xl text-black font-bold sm:text-[28px];
   }
 
   .section-subtitle {
-    @apply text-center block text-[14px] text-red font-bold uppercase mb-[10px];
+    @apply text-center block text-[14px] text-red font-bold uppercase mb-[10px] sm:text-[16px];
   }
 
   .button {
-    @apply flex justify-center py-4 px-8 text-[15px] font-bold rounded-[5rem] transition-all duration-500;
+    @apply flex justify-center py-4 px-8 text-[15px] font-bold rounded-[5rem] transition-all duration-500 sm:text-[16px];
   }
 
   .button:hover {

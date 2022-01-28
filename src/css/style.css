@@ -13,7 +13,7 @@
   }
 
   .section-title {
-    @apply text-center text-2xl text-black font-bold sm:text-[28px];
+    @apply text-center text-2xl text-black font-bold leading-title sm:text-[28px];
   }
 
   .section-subtitle {

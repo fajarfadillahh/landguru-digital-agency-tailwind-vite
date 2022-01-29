@@ -94,9 +94,11 @@
 
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home relative pt-32 pb-16 sm:pt-40">
+      <section
+        class="home relative pt-32 pb-16 sm:pt-40 lg:before:bottom-[120px] lg:after:bottom-[120px]"
+      >
         <div class="home__container container px-5 grid gap-12">
-          <div class="home__data text-center sm:w-[70%] sm:mx-auto">
+          <div class="home__data text-center sm:w-[70%] sm:mx-auto lg:w-[40%]">
             <h1
               class="home__title text-[34px] text-black font-bold leading-title mb-4 sm:text-[42px]"
             >
@@ -117,7 +119,11 @@
             >
           </div>
 
-          <img src="./src/img/home-image.png" alt="" class="home__img" />
+          <img
+            src="./src/img/home-image.png"
+            alt=""
+            class="home__img lg:w-[900px] lg:mx-auto"
+          />
         </div>
       </section>
       <!-- ===== HOME SECTION ===== -->
@@ -135,7 +141,7 @@
           </div>
 
           <div
-            class="features__group grid justify-center w-[250px] gap-8 mx-auto sm:grid-cols-2 sm:w-[80%]"
+            class="features__group grid justify-center w-[250px] gap-8 mx-auto sm:grid-cols-2 sm:w-[80%] lg:grid-cols-4 lg:w-full"
           >
             <div class="features__item grid gap-6">
               <img
@@ -227,19 +233,25 @@
 
       <!-- ===== SERVICES SECTION ===== -->
       <section class="services section">
-        <div class="services__container container px-5 grid gap-12">
-          <div class="services__content grid gap-12">
+        <div
+          class="services__container container px-5 grid gap-12 lg:grid-cols-2"
+        >
+          <div
+            class="services__content grid gap-12 lg:order-2 lg:grid-rows-[repeat(2,_max-ccontent)] lg:self-center"
+          >
             <div class="services__data">
-              <span class="services__subtitle section-subtitle"
+              <span class="services__subtitle section-subtitle lg:text-left"
                 >Our services</span
               >
-              <h1 class="services__title section-title">
+              <h1
+                class="services__title section-title lg:text-left lg:text-[38px]"
+              >
                 Business goals achieved with design
               </h1>
             </div>
 
             <div
-              class="services__group grid w-[320px] mx-auto gap-8 sm:w-[70%]"
+              class="services__group grid w-[320px] mx-auto gap-8 sm:w-[70%] lg:w-full lg:mx-0"
             >
               <div class="services__item flex gap-4">
                 <img
@@ -412,10 +424,16 @@
 
       <!-- ===== ABOUT SECTION ===== -->
       <section class="about section">
-        <div class="about__container container px-5 grid gap-12">
-          <div class="about__data text-center sm:w-[80%] sm:mx-auto">
-            <span class="about__subtitle section-subtitle">Core features</span>
-            <h1 class="about__title section-title mb-6">
+        <div class="about__container container px-5 grid gap-12 lg:grid-cols-2">
+          <div
+            class="about__data text-center sm:w-[80%] sm:mx-auto lg:text-left lg:w-full lg:mx-0 lg:self-center"
+          >
+            <span class="about__subtitle section-subtitle lg:text-left"
+              >Core features</span
+            >
+            <h1
+              class="about__title section-title mb-6 lg:text-left lg:text-[38px]"
+            >
               Smart Jackpots that you may love this anytime & anywhere
             </h1>
             <p
@@ -462,7 +480,7 @@
           </div>
 
           <div
-            class="works__group grid justify-center w-[250px] gap-8 mx-auto sm:grid-cols-2 sm:w-[80%]"
+            class="works__group grid justify-center w-[250px] gap-8 mx-auto sm:grid-cols-2 sm:w-[80%] lg:w-full lg:mx-0 lg:grid-cols-4"
           >
             <div class="works__item grid gap-6">
               <img
@@ -816,7 +834,7 @@
           </div>
 
           <div
-            class="team__group grid grid-cols-[repeat(2,1fr)] gap-4 sm:w-[80%] sm:mx-auto"
+            class="team__group grid grid-cols-[repeat(2,1fr)] gap-4 sm:w-[80%] sm:mx-auto lg:grid-cols-3"
           >
             <div
               class="team__item grid gap-4 p-4 rounded-[1rem] transition-all duration-500 hover:shadow-[0_4px_12px_rgba(52,61,72,0.25)]"
@@ -1452,7 +1470,7 @@
           <div
             class="newsletter__wrapper text-center grid gap-8 py-14 px-8 bg-red rounded-[1rem] sm:p-16"
           >
-            <div class="testimonial__data">
+            <div class="testimonial__data lg:w-[60%] lg:mx-auto">
               <h1 class="newsletter__title section-title text-white mb-[15px]">
                 Subscribe to our Blog
               </h1>
@@ -1467,7 +1485,7 @@
 
             <form
               action=""
-              class="newsletter__direction flex flex-col gap-[10px] sm:flex-row sm:justify-between sm:p-[.3rem] sm:bg-white sm:rounded-[5rem] sm:gap-0"
+              class="newsletter__direction flex flex-col gap-[10px] sm:flex-row sm:justify-between sm:p-[.3rem] sm:bg-white sm:rounded-[5rem] sm:gap-0 lg:w-[60%] lg:mx-auto"
             >
               <input
                 type="text"

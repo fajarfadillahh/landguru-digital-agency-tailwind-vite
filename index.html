@@ -38,7 +38,9 @@
         </a>
 
         <div class="header__menu" id="header-menu">
-          <div class="header__data flex justify-between items-center mr-4 ml-8">
+          <div
+            class="header__data flex justify-between items-center mr-4 ml-8 md:hidden"
+          >
             <a href="#" class="header__logo inline-flex items-center gap-3">
               <img
                 src="./src/img/logo.png"
@@ -58,7 +60,7 @@
             </div>
           </div>
 
-          <ul class="header__list flex flex-col">
+          <ul class="header__list flex flex-col md:flex-row md:gap-8">
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -75,13 +77,13 @@
 
           <a
             href="#"
-            class="header__button button box-border self-end text-red border-[1.5px] border-red mx-8 hover:bg-red hover:text-white"
+            class="header__button button box-border self-end text-red border-[1.5px] border-red mx-8 hover:bg-red hover:text-white md:mx-0"
             >Get Started</a
           >
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-grid-alt"></i>

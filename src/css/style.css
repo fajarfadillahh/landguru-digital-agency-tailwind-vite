@@ -37,7 +37,7 @@
 }
 
 .header__link {
-  @apply flex items-center pl-8 min-h-[48px] bg-transparent text-[15px] text-black;
+  @apply flex items-center pl-8 min-h-[48px] bg-transparent text-[15px] text-black sm:text-[16px];
 }
 
 .header__menu.show-menu {

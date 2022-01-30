@@ -28,6 +28,16 @@ function stickyScroll() {
 }
 window.addEventListener("scroll", stickyScroll);
 
+// ===== SCROLL UP =====
+function scrollUp() {
+  const scrollup = document.getElementById("scroll-up");
+
+  this.scrollY > 150
+    ? scrollup.classList.add("scroll-action")
+    : scrollup.classList.remove("scroll-action");
+}
+window.addEventListener("scroll", scrollUp);
+
 // ===== TESTIMONIAL SWIPER =====
 let swiper = new Swiper(".testimonial-container", {
   centeredSlides: true,

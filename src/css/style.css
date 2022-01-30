@@ -108,3 +108,8 @@
 .swiper-pagination-bullet-active {
   @apply w-[1.5rem] h-[8px] rounded-[.5rem] bg-red;
 }
+
+/* ===== SCROLL UP ===== */
+.scroll-action {
+  @apply bottom-14;
+}
